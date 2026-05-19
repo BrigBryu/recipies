@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="recipe-page h-recipe">
+  <header class="recipe-hero">
+    <p class="eyebrow">{{ page.category | default: "Recipe" }}</p>
+    <h1 class="p-name">{{ page.title }}</h1>
+    <dl class="recipe-meta">
+      {% if page.servings %}<div><dt>Servings</dt><dd>{{ page.servings }}</dd></div>{% endif %}
+      {% if page.time %}<div><dt>Time</dt><dd>{{ page.time }}</dd></div>{% endif %}
+      {% if page.source %}<div><dt>Source</dt><dd>{{ page.source }}</dd></div>{% endif %}
+      {% if page.favorite %}<div><dt>Favorite</dt><dd>Yes</dd></div>{% endif %}
+    </dl>
+    {% if page.tags %}
+      <ul class="tag-list" aria-label="Tags">
+        {% for tag in page.tags %}
+          <li><a href="{{ '/tags/#tag-' | append: tag | slugify | relative_url }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  <div class="recipe-body e-instructions">
+    {{ content }}
+  </div>
+</article>

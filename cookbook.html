@@ -1,0 +1,35 @@
+---
+layout: default
+title: Cookbook
+body_class: cookbook-page
+---
+<section class="cookbook-intro">
+  <p class="eyebrow">Printable View</p>
+  <h1>Cookbook</h1>
+  <p>This page renders every recipe in one long document. Use the browser print dialog to save as PDF, or run the optional script to export a PDF to <code>dist/cookbook.pdf</code>.</p>
+  <div class="cookbook-actions">
+    <a class="button-link" href="#" onclick="window.print(); return false;">Print or Save as PDF</a>
+    <a class="button-link secondary" href="{{ '/' | relative_url }}">Back to Home</a>
+  </div>
+</section>
+
+{% assign recipes = site.recipes | sort: "title" %}
+{% for recipe in recipes %}
+  <article class="cookbook-recipe">
+    <header class="cookbook-recipe-header">
+      <p class="eyebrow">{{ recipe.category | default: "Recipe" }}</p>
+      <h2>{{ recipe.title }}</h2>
+      <p class="meta-inline">{{ recipe.time }}{% if recipe.servings %} · {{ recipe.servings }}{% endif %}{% if recipe.source %} · {{ recipe.source }}{% endif %}</p>
+      {% if recipe.tags %}
+        <ul class="tag-list" aria-label="Tags">
+          {% for tag in recipe.tags %}
+            <li><span>{{ tag }}</span></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </header>
+    <div class="recipe-body">
+      {{ recipe.content | markdownify }}
+    </div>
+  </article>
+{% endfor %}

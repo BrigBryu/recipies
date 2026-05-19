@@ -1,0 +1,29 @@
+title: Bridger's Recipes
+description: A small Markdown-first personal cookbook.
+baseurl: "/recipies"
+url: "https://brigbryu.github.io"
+markdown: kramdown
+permalink: pretty
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - ADDING_RECIPES.md
+  - node_modules
+  - vendor
+  - package-lock.json

@@ -1,0 +1,12 @@
+{
+  "name": "recipies",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Markdown-first personal recipe site and printable cookbook",
+  "scripts": {
+    "pdf": "node scripts/build-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0"
+  }
+}

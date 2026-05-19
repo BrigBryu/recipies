@@ -1,0 +1,32 @@
+---
+layout: default
+title: Tags
+---
+<section class="intro">
+  <p class="eyebrow">Browse by Tag</p>
+  <h1>Recipes grouped by keywords.</h1>
+  <p>Tags live in recipe frontmatter so you can keep organization lightweight and edit everything from Markdown.</p>
+</section>
+
+{% assign all_tags = "" | split: "" %}
+{% for recipe in site.recipes %}
+  {% assign all_tags = all_tags | concat: recipe.tags %}
+{% endfor %}
+{% assign all_tags = all_tags | compact | uniq | sort %}
+
+{% for tag in all_tags %}
+  <section class="tag-section" id="tag-{{ tag | slugify }}">
+    <h2>{{ tag }}</h2>
+    <ul class="recipe-list">
+      {% assign tagged_recipes = site.recipes | where_exp: "recipe", "recipe.tags contains tag" | sort: "title" %}
+      {% for recipe in tagged_recipes %}
+        <li>
+          <a class="recipe-card" href="{{ recipe.url | relative_url }}">
+            <h3>{{ recipe.title }}</h3>
+            <p class="meta-inline">{{ recipe.category }}{% if recipe.time %} · {{ recipe.time }}{% endif %}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

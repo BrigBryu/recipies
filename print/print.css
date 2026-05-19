@@ -1,0 +1,77 @@
+@page {
+  margin: 0.6in;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  font-size: 11pt;
+  line-height: 1.4;
+}
+
+.site-header,
+.site-footer,
+.cookbook-actions {
+  display: none !important;
+}
+
+main.site-shell,
+.site-shell {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro,
+.category-group,
+.recipe-page,
+.cookbook-intro,
+.cookbook-recipe,
+.tag-section,
+.recipe-meta div {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.recipe-page,
+.cookbook-recipe {
+  padding: 0;
+}
+
+.cookbook-recipe {
+  margin: 0;
+}
+
+.cookbook-recipe-header {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #999;
+}
+
+.cookbook-recipe,
+.recipe-page {
+  break-inside: avoid-page;
+}
+
+h1,
+h2,
+h3 {
+  break-after: avoid-page;
+}
+
+ul,
+ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+
+li {
+  margin: 0.12rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
