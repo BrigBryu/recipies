@@ -1,6 +1,6 @@
 ---
 title: Sourdough Pizza
-category: Baking
+category: Bread
 tags: [sourdough, dinner, cheese]
 servings: varies
 time: varies

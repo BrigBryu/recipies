@@ -19,7 +19,6 @@ assets/css/        Screen styles
 print/             Print stylesheet
 scripts/           Optional PDF export helpers
 index.html         Home page grouped by category
-tags.html          Tag index
 cookbook.html      All recipes in one printable page
 ```
 
@@ -28,7 +27,7 @@ cookbook.html      All recipes in one printable page
 1. Create a new file in [`_recipes/`](/Users/bridgerbrundy/code/recipies/_recipes) with a slug name like `ginger-scallion-noodles.md`.
 2. Copy the frontmatter shape below.
 3. Write the recipe content in normal Markdown.
-4. Reload the site. The recipe will automatically appear on the home page, tag page, and cookbook page.
+4. Reload the site. The recipe will automatically appear on the home page and cookbook page.
 5. In the instructions, repeat ingredient amounts in the step text because this cookbook uses that style on purpose.
 
 ```md

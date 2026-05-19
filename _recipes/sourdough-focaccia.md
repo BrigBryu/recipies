@@ -1,6 +1,6 @@
 ---
 title: Sourdough Focaccia
-category: Baking
+category: Bread
 tags: [sourdough, bread, video]
 servings: varies
 time: varies

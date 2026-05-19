@@ -1,6 +1,6 @@
 ---
 title: Sourdough Bread
-category: Baking
+category: Bread
 tags: [sourdough, bread, overnight]
 servings: 1 loaf
 time: 1 day

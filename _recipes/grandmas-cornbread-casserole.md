@@ -1,6 +1,6 @@
 ---
 title: Grandma's Cornbread Casserole
-category: Baking
+category: Bread
 tags: [cornbread, casserole, holiday]
 servings: 6-8
 time: 55 min

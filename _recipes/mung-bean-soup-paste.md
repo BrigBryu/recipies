@@ -1,6 +1,6 @@
 ---
 title: Mung Bean Soup Paste
-category: Soup
+category: Dessert
 tags: [pressure cooker, pantry, sweet]
 servings: varies
 time: 1 hr 20 min

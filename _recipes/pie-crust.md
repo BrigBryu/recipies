@@ -1,6 +1,6 @@
 ---
 title: Pie Crust
-category: Baking
+category: Bread
 tags: [dough, freezer, basic]
 servings: 1 crust batch
 time: 20 min
