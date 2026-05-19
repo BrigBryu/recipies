@@ -5,7 +5,6 @@ tags: [air fryer, spicy, rice meal]
 servings: 3-4
 time: 35 min
 source: Curtis
-favorite: true
 ---
 # Crispy Cumin Chicken
 

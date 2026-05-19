@@ -2,12 +2,6 @@
 layout: default
 title: Home
 ---
-<section class="intro">
-  <p class="eyebrow">Personal Cookbook</p>
-  <h1>Simple recipes, stored as Markdown, readable anywhere.</h1>
-  <p>This site is generated from plain <code>.md</code> recipe files. Browse by category here, use the tag index for cross-cutting ideas, or open the cookbook page when you want a print-friendly all-in-one view.</p>
-</section>
-
 {% assign categories = site.recipes | map: "category" | compact | uniq | sort %}
 {% for category in categories %}
   {% assign items = site.recipes | where: "category", category | sort: "title" %}
@@ -17,10 +11,7 @@ title: Home
       {% for recipe in items %}
         <li>
           <a class="recipe-card" href="{{ recipe.url | relative_url }}">
-            <h3>
-              {{ recipe.title }}
-              {% if recipe.favorite %}<span class="favorite-badge">Favorite</span>{% endif %}
-            </h3>
+            <h3>{{ recipe.title }}</h3>
             <p class="meta-inline">{{ recipe.time }}{% if recipe.servings %} · {{ recipe.servings }}{% endif %}{% if recipe.source %} · {{ recipe.source }}{% endif %}</p>
             {% if recipe.tags %}
               <p>

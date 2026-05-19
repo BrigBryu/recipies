@@ -173,18 +173,6 @@ main.site-shell {
   font-size: 0.92rem;
 }
 
-.favorite-badge {
-  display: inline-block;
-  margin-left: 0.45rem;
-  padding: 0.18rem 0.5rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 700;
-  vertical-align: middle;
-}
-
 .recipe-page {
   padding: 1.5rem;
   max-width: var(--reading-width);

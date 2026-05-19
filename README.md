@@ -39,7 +39,6 @@ tags: [quick, pantry, weeknight]
 servings: 2
 time: 15 min
 source: Personal
-favorite: false
 ---
 # Ginger Scallion Noodles
 

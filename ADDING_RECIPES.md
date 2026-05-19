@@ -27,7 +27,6 @@ tags: [tag one, tag two]
 servings: 2-4
 time: 30 min
 source: Where it came from
-favorite: false
 ---
 ```
 

@@ -5,7 +5,6 @@ tags: [stovetop, citrus, weeknight]
 servings: 4
 time: 30 min
 source: Family notebook
-favorite: false
 ---
 # Orange Chicken
 

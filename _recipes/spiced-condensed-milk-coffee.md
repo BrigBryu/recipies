@@ -5,7 +5,6 @@ tags: [coffee, sweet, quick]
 servings: 1
 time: 10 min
 source: Kitchen experiment
-favorite: true
 ---
 # Spiced Condensed Milk Coffee
 
