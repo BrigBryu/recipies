@@ -29,6 +29,7 @@ cookbook.html      All recipes in one printable page
 2. Copy the frontmatter shape below.
 3. Write the recipe content in normal Markdown.
 4. Reload the site. The recipe will automatically appear on the home page, tag page, and cookbook page.
+5. In the instructions, repeat ingredient amounts in the step text because this cookbook uses that style on purpose.
 
 ```md
 ---
@@ -46,7 +47,8 @@ favorite: false
 - ...
 
 ## Instructions
-1. ...
+1. Add 8 oz noodles to boiling water and cook until tender.
+2. Stir 2 tbsp soy sauce and 1 tbsp sesame oil together in a bowl.
 
 ## Serve With
 - ...

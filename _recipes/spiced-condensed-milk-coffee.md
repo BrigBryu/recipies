@@ -19,8 +19,8 @@ favorite: true
 
 ## Instructions
 
-1. Brew the coffee a little stronger than usual.
-2. Stir the condensed milk, cardamom, cinnamon, and salt into the hot coffee until fully dissolved.
+1. Brew 1 strong cup of coffee a little stronger than usual.
+2. Stir 2 tbsp sweetened condensed milk, 1 pinch ground cardamom, 1 pinch cinnamon, and a tiny pinch of kosher salt into the hot coffee until fully dissolved.
 3. Taste and adjust sweetness or spice.
 
 ## Serve With

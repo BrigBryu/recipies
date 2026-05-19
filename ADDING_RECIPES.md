@@ -42,7 +42,7 @@ Use these sections in this order:
 - ingredient
 
 ## Instructions
-1. step
+1. step with ingredient amounts repeated in the sentence
 
 ## Serve With
 - optional side or serving idea
@@ -60,6 +60,8 @@ Use these sections in this order:
 - Use `servings` as plain human-readable text like `2`, `4`, or `3-4`.
 - Write ingredients as compact bullets, one item per line.
 - Write instructions as numbered steps.
+- Repeat ingredient amounts inside the instructions instead of relying on the ingredients list alone.
+- Prefer steps like `Add 2 tbsp butter` over `Add butter`.
 - Prefer sentence case for section content.
 - Keep notes brief and useful.
 
@@ -70,6 +72,7 @@ Use these sections in this order:
 - Infer a sensible category if one is missing.
 - Add 2 to 5 practical tags, not a long list.
 - If a section is unknown, include the section heading and use a short placeholder only when necessary.
+- When writing or normalizing instructions, carry the relevant amounts into the step text so the cook does not need to bounce back and forth as much.
 - Do not invent long backstories, SEO text, nutrition panels, or chatty intros.
 - Do not add HTML unless Markdown cannot express the content.
 
